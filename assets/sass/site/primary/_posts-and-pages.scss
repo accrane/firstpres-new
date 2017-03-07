@@ -1,0 +1,1313 @@
+.template-index {
+  >.row-1 {
+    position: relative;
+    overflow: hidden;
+    >.overlay {
+      position: absolute;
+      @include translateX(-50%);
+      top: 15px;
+      left: 50%;
+      width: 100%;
+      @media screen and (min-width: $tabwidth) {
+        top: 30px;
+      }
+      >.row-1 {
+        width: 25%;
+        margin: 0 auto;
+        h1 {
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+      >.row-2 {
+        text-align: center;
+        .new {
+          display: inline-block;
+          margin: 0;
+          width: 120px;
+          text-align: center;
+          background-color: $color__first-blue;
+          @media screen and (min-width: $tabwidth){
+            width: auto;
+            margin: 0 20px 0 0;
+          }
+          a {
+            display: block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-family: Elkwood, serif;
+            letter-spacing: 2px;
+            @media screen and (min-width: $tabwidth){
+              font-size: 16px;
+            }
+          }
+        }
+        .week {
+          display: inline-block;
+          background-color: $color__first-blue;
+          width: 120px;
+          text-align: center;
+          @media screen and (min-width: $tabwidth){
+            width: auto;
+          }
+          a {
+            display: block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-family: Elkwood, serif;
+            letter-spacing: 2px;
+            @media screen and (min-width: $tabwidth){
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    img {
+      width: 120%;
+      max-width: 120%;
+      display: block;
+      @media screen and (min-width: $tabwidth){
+        width: 100%;
+      }
+    }
+  }
+  >.row-2 {
+
+    > .wrapper {
+      width: 95%;
+      margin: 10px auto;
+      @media screen and (min-width: $tabwidth) {
+        width: 90%;
+      }
+      > button {
+        display: block;
+        margin: 0 auto 20px auto;
+        box-shadow: none;
+        text-shadow: none;
+        background-color: $color__first-blue;
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+        @media screen and (min-width: $tabwidth) {
+          display: none;
+        }
+      }
+      ul#primary-menu {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: none;
+        &.toggled {
+          display: block;
+        }
+        @media screen and (min-width: $tabwidth) {
+          display: block;
+        }
+        li {
+          text-align: center;
+          list-style-type: none;
+          @media screen and (min-width: $tabwidth) {
+            display: inline-block;
+          }
+          &:first-child {
+            a {
+              &:before {
+                display: none;
+              }
+            }
+          }
+          a {
+            &:before {
+              display: none;
+              @media screen and (min-width: $tabwidth) {
+                content: "|";
+                display: inline-block;
+                transform: rotate(25deg);
+                color: $color__first-blue;
+                margin: 0 20px;
+                font-size: 35px;
+                line-height: 1;
+              }
+            }
+            color: $color__first-grey;
+            text-decoration: none;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-family: Elkwood, serif;
+            letter-spacing: 1px;
+            &:hover, &.active {
+              color: $color__first-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+  >.row-3 {
+    width: 95%;
+    margin: 10px auto;
+    @media screen and (min-width: $tabwidth){
+      width: 90%;
+      @include flexbox;
+      @include flexbox-align-content(stretch);
+      @include flexbox-align-items(stretch);
+      @include flexbox-justify(center);
+      @include flexbox-wrap(nowrap);
+    }
+    >.column-1 {
+      width: 100%;
+      @media screen and (max-width: $tabwidth -1) {
+        background-image: none !important;
+      }
+      @media screen and (min-width: $tabwidth) {
+        width: 50%;
+        background-position: center;
+        background-size: cover;
+        img {
+          display: none !important;
+        }
+      }
+      img {
+        display: block;
+      }
+    }
+    >.column-2 {
+      width: 100%;
+      @media screen and (min-width: $tabwidth) {
+        width: 50%;
+      }
+      >.row-1 {
+        background-color: $color__first-dark-blue;
+        padding: 10px 20px 0 20px;
+        @include transition(all ease .3s);
+        &:hover {
+          background-color: rgba(#000, 1);
+        }
+        .title {
+          h2 {
+            color: white;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0px 0 10px 0;
+            font-family: DIN, serif;
+          }
+        }
+        .copy {
+          // color: $color__first-blue;
+          color: $color__first-light-blue;
+          text-transform: uppercase;
+          line-height: 1.5;
+          font-family: Elkwood, serif;
+          letter-spacing: 2px;
+          font-size: 18px;
+        }
+        a {
+          display: block;
+          text-decoration: none;
+        }
+      }
+      >.row-2 {
+        padding: 20px;
+        background-color: $color__first-blue;
+        color: white;
+        text-transform: uppercase;
+        line-height: 1.8;
+        font-family: Elkwood, serif;
+        letter-spacing: 2px;
+        font-size: 18px;
+      }
+    }
+  }
+  >.row-4 {
+    width: 95%;
+    margin: 10px auto;
+    @media screen and (min-width: $tabwidth){
+      width: 90%;
+    }
+    >.column {
+      position: relative;
+
+      @media screen and (min-width: $tabwidth) {
+        width: 25%;
+        float: left;
+      }
+      &:hover {
+        >.overlay {
+          // display: block;
+          opacity: 1;
+        }
+      }
+      >.overlay {
+        // display: none;
+        opacity: 0;
+        position: absolute;
+        background-color: $color__first-blue-overlay;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        z-index: 2;
+        color: white;
+        padding: 10px;
+         @include transition(all ease .3s);
+        .title {
+          h2 {
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 35px;
+            font-family: DIN, serif;
+          }
+        }
+        .copy {
+          padding: 0 5px;
+          font-size: 14px;
+          font-family: Hero, serif;
+        }
+        .more {
+          margin: 30px 0 0 0;
+          padding-bottom: 10px;
+          text-align: right;
+          a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: $color__first-dark-blue;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: Elkwood, serif;
+            font-size: 25px;
+            line-height: 1;
+            letter-spacing: 4px;
+          }
+        }
+      }
+      >.row-1 {
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+      >.row-2 {
+        background-color: $color__first-dark-blue;
+        position: relative;
+        img {
+          display: block;
+          opacity: 0;
+          width: 100%;
+        }
+        .title {
+          position: absolute;
+          overflow: hidden;
+          top: 50%;
+          left: 50%;
+          @include center;
+          color: white;
+          font-size: 40px;
+          text-transform: uppercase;
+          font-family: DIN, serif;
+          @media screen and (min-width: $tabwidth) {
+            font-size: 20px;
+          }
+          @media screen and (min-width: $deskwidth) {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+.template-page, .template-about, .template-sitemap,
+.error-404, .template-worship, .template-this-week, .template-live {
+  > .row-1 {
+    >.wrapper {
+      padding: 10px 0;
+      background-color: $color__first-dark-blue;
+      ul#sub-menu {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        display: none;
+        @media screen and (min-width: $tabwidth) {
+          width: 90%;
+        }
+        &.toggled {
+          display: block;
+        }
+        @media screen and (min-width: $tabwidth) {
+          display: block;
+        }
+        li {
+          text-align: center;
+          list-style-type: none;
+          @media screen and (min-width: $tabwidth) {
+            display: inline-block;
+          }
+          &:first-child {
+            a {
+              &:before {
+                display: none;
+              }
+            }
+          }
+          a {
+            &:before {
+              display: none;
+              @media screen and (min-width: $tabwidth) {
+                content: "|";
+                display: inline-block;
+                color: white;
+                margin: 0 20px;
+                font-size: 30px;
+                line-height: 1;
+              }
+            }
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family: Elkwood, serif;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+  > .row-2 {
+    margin-bottom: 5%;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  > .row-3, >.sitemap-404-row-1 {
+    width: 95%;
+    margin: 20px auto 0 auto;
+    @media screen and (min-width: $tabwidth) {
+      width: 90%;
+    }
+    > .column-1 {
+      width: 100%;
+      @media screen and (min-width: $tabwidth) {
+        width: 60%;
+        float: left;
+      }
+      .title {
+        margin: 0 0 15px 0;
+        header {
+          h1 {
+            margin: 0;
+            text-transform: uppercase;
+            color: $color__first-light-blue;
+          }
+        }
+      }
+      .copy {
+        margin: 15px 0 0 0;
+
+      }
+      > .live {
+        margin: 30px 0 0 0;
+        h2 {
+          margin: 0;
+          size: 25px;
+        }
+        .iframe-wrapper {
+          margin: 15px 0 0 0;
+          position: relative;
+          width: 100%;
+          padding: 56.25% 0 0 0;
+          iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+      > .past {
+        margin: 30px 0 0 0;
+        h2 {
+          margin: 0;
+          size: 25px;
+        }
+        .iframe-wrapper {
+          margin: 15px 0 0 0;
+          position: relative;
+          width: 100%;
+          padding: 86.5% 0 0 0;
+          iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+    > .column-2 {
+      width: 100%;
+      margin: 10px 0;
+      @media screen and (min-width: $tabwidth) {
+        width: 35.5%;
+        margin: 0 0 0 4.5%;
+        float: left;
+      }
+      > img {
+        width: 100%;
+        display: block;
+      }
+      > .title {
+        h2 {
+          margin: 0;
+          text-transform: uppercase;
+          color: $color__first-light-blue;
+        }
+      }
+      .staff-wrapper {
+        width: 100%;
+        @media screen and (min-width: $tabwidth) {
+          @include flexbox;
+          @include flexbox-align-content(stretch);
+          @include flexbox-align-items(stretch);
+          @include flexbox-justify(flex-start);
+          @include flexbox-wrap(wrap);
+        }
+        .staff {
+          width: 100%;
+          margin: 0 0 20px 0;
+          @media screen and (min-width: $tabwidth) {
+            width: 100%;
+            border-bottom: 10px solid white;
+            @include flexbox;
+            @include flexbox-align-content(stretch);
+            @include flexbox-align-items(stretch);
+            @include flexbox-justify(flex-start);
+            @include flexbox-wrap(nowrap);
+            @include flexbox-direction(column);
+            margin: 0;
+          }
+          @media screen and (min-width: $deskwidth) {
+            width: calc(50% - 5px);
+            &:nth-child(odd) {
+              margin: 0 10px 0 0;
+            }
+          }
+          &:hover {
+            > .row-1 {
+              > .overlay {
+                display: block;
+              }
+            }
+            > .row-2 {
+              background-color: $color__first-dark-blue;
+              color: white;
+              > .bar {
+                border: 1px solid white;
+              }
+            }
+            > .row-3 {
+              background-color: $color__first-dark-blue;
+              >.wrapper {
+                background-color: $color__first-dark-blue;
+              }
+            }
+          }
+          > .row-1 {
+            position: relative;
+            min-height: 50px;
+            @media screen and (min-width: $tabwidth) {
+              @include flexbox-flex(0,1,auto);
+            }
+            > .overlay {
+              display: none;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: $color__first-blue-overlay;
+              z-index: 2;
+              a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: block;
+                span {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  @include center;
+                  color: white;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  font-family: Elkwood, sans-serif;
+                  font-size: 28px;
+                  line-height: 1;
+                }
+              }
+            }
+            img {
+              display: block;
+              width: 100%;
+            }
+          }
+          > .row-2 {
+            text-align: center;
+            padding: 10px;
+            @media screen and (min-width: $tabwidth) {
+              @include flexbox-flex(1,1,auto);
+            }
+            h3 {
+              margin: 0;
+              font-size: 18px;
+              @media screen and (min-width: $tabwidth) {
+                font-size: 15px;
+              }
+            }
+            .bar {
+              width: 50%;
+              border: 1px solid $color__first-dark-blue;
+              border-radius: 1px;
+              margin: 0 auto;
+            }
+            .p-title {
+              font-size: 16px;
+              font-family: Elkwood, sans-serif;
+              @media screen and (min-width: $tabwidth) {
+                font-size: 14px;
+              }
+            }
+          }
+          > .row-3 {
+              background-color: $color__first-grey;
+              width: 100%;
+              color: white;
+              padding: 5px;
+              @media screen and (min-width: $tabwidth) {
+                @include flexbox-flex(0, 1, auto);
+              }
+              .phone {
+                float: left;
+                a {
+                  color: inherit;
+                  font-family: Hero, sans-serif;
+                  font-size: 18px;
+                  line-height: 1;
+                  text-decoration: none;
+                }
+              }
+              .email {
+                float: right;
+                a {
+                  color: inherit;
+                  text-decoration: none;
+                }
+              }
+          }
+          > .hidden {
+            display: none;
+          }
+        }
+        .staff-2-wrapper {
+          width: 100%;
+          margin: 0;
+          @media screen and (min-width: $deskwidth) {
+            width: calc(50% - 5px);
+          }
+          >.wrapper {
+            padding: 10px;
+            background-color: $color__first-blue;
+            .staff-2 {
+              margin: 0 0 10px 0;
+              &:last-child {
+                margin: 0;
+              }
+              &:hover {
+                > .row-1 {
+                  > .overlay {
+                    display: block;
+                  }
+                }
+              }
+              > .row-1 {
+                text-align: center;
+                padding: 10px;
+                background-color: $color__first-dark-blue;
+                position: relative;
+                > .overlay {
+                  display: none;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: $color__first-blue-overlay;
+                  z-index: 2;
+                  a {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    span {
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      @include center;
+                      color: white;
+                      text-decoration: none;
+                      text-transform: uppercase;
+                      font-family: Elkwood, sans-serif;
+                      font-size: 28px;
+                      line-height: 1;
+                    }
+                  }
+                }
+                h3 {
+                  margin: 0;
+                  font-size: 18px;
+                  color: white;
+                  @media screen and (min-width: $tabwidth) {
+                    font-size: 15px;
+                  }
+                }
+                .bar {
+                  width: 50%;
+                  border: 1px solid white;
+                  border-radius: 1px;
+                  margin: 0 auto;
+                }
+                .p-title {
+                  font-size: 16px;
+                  font-family: Elkwood, sans-serif;
+                  color: white;
+                  @media screen and (min-width: $tabwidth) {
+                    font-size: 14px;
+                  }
+                }
+              }
+              > .hidden {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.template-page, .template-about, .template-worship, .template-this-week {
+  .content-row {
+    width: 95%;
+    margin: 0 auto;
+    @media screen and (min-width: $tabwidth){
+      width: 90%;
+    }
+    >.title {
+      clear:both;
+      margin: 30px 0 15px 0;
+      h2 {
+        margin: 0;
+        text-transform: uppercase;
+        color: $color__first-light-blue;
+      }
+    }
+    >.column-1 {
+      width: 100%;
+      margin: 15px 0;
+      @media screen and (min-width: $tabwidth) {
+        width: 60%;
+        float: left;
+        margin: 15px 0 0 0;
+      }
+    }
+    >.column-2 {
+      width: 100%;
+      margin: 10px 0;
+      @media screen and (min-width: $tabwidth) {
+        width: 35.5%;
+        margin: 0 0 0 4.5%;
+        float: left;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+      }
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+.template-this-week {
+  >.row-blog {
+    width: 95%;
+    margin: 0 auto;
+    @media screen and (min-width: $tabwidth){
+      width: 90%;
+    }
+    >.title {
+      clear:both;
+      margin: 30px 0 15px 0;
+      h2 {
+        margin: 0;
+        text-transform: uppercase;
+        color: $color__first-light-blue;
+      }
+    }
+    >.column-1 {
+      width: 100%;
+      margin: 15px 0;
+      @media screen and (min-width: $tabwidth) {
+        &.two-column {
+          width: 60%;
+          float: left;
+          margin: 15px 0 0 0;
+        }
+      }
+    }
+    >.column-2 {
+      width: 100%;
+      margin: 10px 0;
+      @media screen and (min-width: $tabwidth) {
+        width: 35.5%;
+        margin: 0 0 0 4.5%;
+        float: left;
+      }
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+.template-staff {
+  > .row-1 {
+    >.wrapper {
+      padding: 10px 0;
+      background-color: $color__first-dark-blue;
+      ul#sub-menu {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        display: none;
+        @media screen and (min-width: $tabwidth) {
+          width: 90%;
+        }
+        &.toggled {
+          display: block;
+        }
+        @media screen and (min-width: $tabwidth) {
+          display: block;
+        }
+        li {
+          text-align: center;
+          list-style-type: none;
+          @media screen and (min-width: $tabwidth) {
+            display: inline-block;
+          }
+          &:first-child {
+            a {
+              &:before {
+                display: none;
+              }
+            }
+          }
+          a {
+            &:before {
+              display: none;
+              @media screen and (min-width: $tabwidth) {
+                content: "|";
+                display: inline-block;
+                color: white;
+                margin: 0 20px;
+                font-size: 30px;
+                line-height: 1;
+              }
+            }
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family: Elkwood, serif;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+  > .row-2 {
+    margin-bottom: 5%;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  > .row-3 {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    @media screen and (min-width: $tabwidth) {
+      width: 90%;
+    }
+    color: $color__first-light-blue;
+  }
+  >.row-4 {
+    background-color: $color__first-dark-blue;
+    ul {
+      width: 95%;
+      margin: 0 auto;
+      padding: 10px 0;
+      text-align: center;
+      @media screen and (min-width: $tabwidth) {
+        width: 90%;
+        padding: 0;
+      }
+      li {
+        text-align: center;
+        list-style-type: none;
+        @media screen and (min-width: $tabwidth) {
+          display: inline-block;
+        }
+        a {
+          color: white;
+          margin: 0;
+          text-decoration: none;
+          font-size: 20px;
+          padding: 0 20px;
+          display: inline-block;
+          text-transform: uppercase;
+          font-family: Elkwood, serif;
+          letter-spacing: 1px;
+          @media screen and (min-width: $tabwidth) {
+            padding: 10px 20px;
+            &.active {
+              background-color: white;
+              color: $color__first-dark-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+  > .staff-wrapper.row-5 {
+    width: 95%;
+    margin: 5% auto 0 auto;
+    padding: 0;
+    text-align: center;
+    @media screen and (min-width: $tabwidth) {
+      width: 90%;
+      @include flexbox;
+      @include flexbox-align-content(stretch);
+      @include flexbox-align-items(stretch);
+      @include flexbox-justify(flex-start);
+      @include flexbox-wrap(wrap);
+    }
+    .staff {
+      width: 100%;
+      margin: 0 0 20px 0;
+      @media screen and (min-width: $tabwidth) {
+        width: calc(100%/3 - 20px/3);
+        margin: 0 10px 0 0;
+        border-bottom: 10px solid white;
+        @include flexbox;
+        @include flexbox-align-content(stretch);
+        @include flexbox-align-items(stretch);
+        @include flexbox-justify(flex-start);
+        @include flexbox-wrap(nowrap);
+        @include flexbox-direction(column);
+        &.count-2 {
+          margin-right: 0;
+        }
+      }
+      @media screen and (min-width: $deskwidth) {
+        width: calc(20% - 50px/4);
+        &.count-2 {
+          margin-right: 10px;
+        }
+        &.count-4 {
+          margin-right: 0;
+        }
+      }
+      &:hover {
+        > .row-1 {
+          > .overlay {
+            display: block;
+          }
+        }
+        > .row-2 {
+          background-color: $color__first-dark-blue;
+          color: white;
+          > .bar {
+            border: 1px solid white;
+          }
+        }
+        > .row-3 {
+          background-color: $color__first-dark-blue;
+          >.wrapper {
+            background-color: $color__first-dark-blue;
+          }
+        }
+      }
+      > .row-1 {
+        position: relative;
+        min-height: 50px;
+        @media screen and (min-width: $tabwidth) {
+          @include flexbox-flex(0,1,auto);
+        }
+        > .overlay {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $color__first-blue-overlay;
+          z-index: 2;
+          a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              @include center;
+              color: white;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-family: Elkwood, sans-serif;
+              font-size: 28px;
+              line-height: 1;
+            }
+          }
+        }
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+      > .row-2 {
+        text-align: center;
+        padding: 10px;
+        @media screen and (min-width: $tabwidth) {
+          @include flexbox-flex(1,1,auto);
+        }
+        h2 {
+          margin: 0;
+          font-size: 18px;
+          @media screen and (min-width: $tabwidth) {
+            font-size: 15px;
+          }
+        }
+        .bar {
+          width: 50%;
+          border: 1px solid $color__first-dark-blue;
+          border-radius: 1px;
+          margin: 0 auto;
+        }
+        .p-title {
+          font-size: 16px;
+          font-family: Elkwood, sans-serif;
+          @media screen and (min-width: $tabwidth) {
+            font-size: 14px;
+          }
+        }
+      }
+      > .row-3 {
+          background-color: $color__first-grey;
+          width: 100%;
+          color: white;
+          padding: 5px;
+          @media screen and (min-width: $tabwidth) {
+            @include flexbox-flex(0, 1, auto);
+          }
+          .phone {
+            float: left;
+            a {
+              color: inherit;
+              font-family: Hero, sans-serif;
+              font-size: 18px;
+              line-height: 1;
+              text-decoration: none;
+            }
+          }
+          .email {
+            float: right;
+            a {
+              color: inherit;
+              text-decoration: none;
+            }
+          }
+      }
+      > .hidden {
+        display: none;
+      }
+    }
+  }
+  >.elders-deacons-wrapper.row-5 {
+    width: 95%;
+    margin: 5% auto 0 auto;
+    padding: 0;
+    @media screen and (min-width: $tabwidth) {
+      width: 90%;
+    }
+    >.elders, >.deacons {
+      text-align: left;
+      >.title {
+        h2 {
+          color: $color__first-light-blue;
+        }
+      }
+      > .cats {
+        > .cat {
+          width: 100%;
+          margin: 0;
+          @media screen and (min-width: $tabwidth) {
+            float: left;
+            width: calc(1 / 3 * 100% - 1 / 3 * 40px);
+            margin-right: 20px;
+          }
+          &:last-child {
+            margin: 0;
+          }
+          > .cat-title {
+            h3 {
+            }
+          }
+          > .list {
+            h4 {
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.template-single, .template-archive, .template-single-event {
+  > .row-1 {
+    margin-bottom: 5%;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  >.row-2 {
+    width: 95%;
+    margin: 20px auto 0 auto;
+    @media screen and (min-width: $tabwidth) {
+      width: 90%;
+    }
+    > .column-1 {
+      width: 100%;
+      @media screen and (min-width: $tabwidth) {
+        width: 70%;
+        float: left;
+      }
+      .title {
+        margin: 0 0 15px 0;
+        header {
+          h1 {
+            margin: 0;
+            text-transform: uppercase;
+            color: $color__first-light-blue;
+          }
+          h2 {
+            font-size: 20px;
+            margin: 0;
+          }
+        }
+      }
+      > .copy {
+        margin: 15px 0 0 0;
+      }
+      > .live {
+        margin: 30px 0 0 0;
+        h2 {
+          margin: 0;
+          size: 25px;
+        }
+        .iframe-wrapper {
+          margin: 15px 0 0 0;
+          position: relative;
+          width: 100%;
+          padding: 56.25% 0 0 0;
+          iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+      > .past {
+        margin: 30px 0 0 0;
+        h2 {
+          margin: 0;
+          size: 25px;
+        }
+        .iframe-wrapper {
+          margin: 15px 0 0 0;
+          position: relative;
+          width: 100%;
+          padding: 86.5% 0 0 0;
+          iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+      >.posts {
+        >.post {
+          margin: 30px 0 0 0;
+          &:first-child {
+            margin: 0;
+          }
+          .title {
+            h2 {
+              margin: 0;
+              text-transform: uppercase;
+              font-size: 25px;
+              a {
+                color: $color__first-dark-blue;
+                text-decoration: none;
+                &:hover {
+                  color: $color__first-light-blue;
+                }
+              }
+            }
+          }
+          .date {
+            margin: 15px 0 0 0;
+            font-family: Hero, serif;
+            font-weight: 800;
+          }
+          .copy {
+            margin: 15px 0 0 0;
+          }
+        }
+      }
+    }
+    > .column-2 {
+      width: 100%;
+      margin: 10px 0;
+      @media screen and (min-width: $tabwidth) {
+        width: 25.5%;
+        margin: 0 0 0 4.5%;
+        float: left;
+      }
+      >aside.event {
+        .event {
+          margin: 0 0 20px 0;
+          &:last-child {
+            margin: 0;
+          }
+          a {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 800;
+            color: $color__text-main;
+            text-decoration: none;
+            @media screen and (min-width: $deskwidth) {
+              font-size: 14px;
+            }
+            > .column-1 {
+              float: left;
+              width: 40px;
+              font-family: Elkwood, serif;
+              letter-spacing: 2px;
+              @media screen and (min-width: $deskwidth) {
+                width: 70px;
+              }
+              > .row-1 {
+                background-color: $color__first-blue;
+                color: white;
+                text-align: center;
+                font-size: 12px;
+                @media screen and (min-width: $deskwidth) {
+                  font-size: 20px;
+                }
+              }
+              > .row-2 {
+                background-color: $color__first-dark-blue;
+                color: white;
+                text-align: center;
+                font-size: 12px;
+                @media screen and (min-width: $deskwidth) {
+                  font-size: 20px;
+                }
+
+              }
+            }
+            > .column-2 {
+              float: left;
+              width: calc(100% - 40px);
+              padding-left: 5px;
+              font-family: Elkwood, serif;
+              letter-spacing: 2px;
+              font-size: 16px;
+              @media screen and (min-width: $deskwidth) {
+                width: calc(100% - 70px);
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+section.elders-deacons {
+  h2, h3 {
+    text-align: left;
+  }
+  h2 {
+    border-bottom: 1px solid $color__first-dark-blue;
+    
+  }
+  width: 100%;
+  float: left;
+  .column-section {
+    width: 28%;
+    float: left;
+    margin: 2%;
+    
+
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    text-align: left;
+    margin: 0 ;
+    padding: 0;
+    list-style: none;
+  }
+}

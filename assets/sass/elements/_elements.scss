@@ -1,0 +1,47 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote, q {
+	color: rgba(#000, .5);
+	font-style: italic;
+	padding: 20px 0;
+	border-bottom: 1px solid rgba(#000, .2);
+	border-top: 1px solid rgba(#000, .2);
+	margin: 0 5% 30px 5%;
+	width: auto;
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+.change-at {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+@import "tables";
