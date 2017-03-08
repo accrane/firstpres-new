@@ -46,6 +46,16 @@
                     <?php the_content();?>
                 </div><!--.copy-->
             <?php endif;?>
+
+            <style>.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 100vh; overflow: hidden; max-width: 100%; /*height: auto;*/ } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; }</style>
+                <div class='embed-container'>
+                    <iframe frameborder="0" scrolling="no" align="middle"
+                        src="http://player.piksel.com/player.php?p=dek7nez2&wmode=transparent&r=true"
+                        height="400" width="640"
+                        allowtransparency="true" allowfullscreen>
+                    </iframe>
+                </div>
+
             <?php $live = get_field("live");
             $past = get_field("past");
             $past_title = get_field("past_title");

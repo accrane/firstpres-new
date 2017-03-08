@@ -368,7 +368,10 @@
 .resource-link {
   width: 100%;
   margin: 20px 0 0 0;
-
+  font: {
+    family: Hero, serif;
+    size: 15px;
+  }
   a {
     width: 100%;
     padding: 15px 0;

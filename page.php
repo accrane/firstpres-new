@@ -18,16 +18,8 @@ get_header("interior"); ?>
 			<?php if(have_posts()): the_post();
 				get_template_part( 'template-parts/content', 'page' );
 
-				if(is_page('test-stream')) { ?>
-				<style>.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-				<div class='embed-container'>
-				    <iframe frameborder="0" scrolling="no" align="middle"
-				        src="http://player.piksel.com/player.php?p=dek7nez2&wmode=transparent&r=true"
-				        height="400" width="640"
-				        allowtransparency="true" allowfullscreen>
-				    </iframe>
-				</div>
-				<?php }
+				if(is_page('calendar')) { get_template_part( 'template-parts/calendar' ); }
+
 			endif;?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
