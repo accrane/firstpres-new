@@ -71,7 +71,7 @@
                     </div>
                 </div><!--.live-->
             <?php endif;
-            if($past):?>
+            if($past_title): // change | will add feed in backend later ?>
                 <div class="past">
                     <?php if($past_title):?>
                         <h2><?php echo $past_title;?></h2>
