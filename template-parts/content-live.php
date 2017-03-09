@@ -47,14 +47,15 @@
                 </div><!--.copy-->
             <?php endif;?>
 
-            <style>.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 100vh; overflow: hidden; max-width: 100%; /*height: auto;*/ } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; }</style>
-                <div class='embed-container'>
-                    <iframe frameborder="0" scrolling="no" align="middle"
-                        src="http://player.piksel.com/player.php?p=dek7nez2&wmode=transparent&r=true"
-                        height="400" width="640"
-                        allowtransparency="true" allowfullscreen>
-                    </iframe>
-                </div>
+            <style>.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-dcontainer'><iframe id="playerIFrame" frameborder="0" scrolling="no" align="middle"
+                src="http://player.piksel.com/playerlive.php?s=b2tj2evy&r=true&doResize=false"
+                height="360" width="640"
+                allowtransparency="true" allowfullscreen>
+                </iframe></div>
+
+
+
+            
 
             <?php $live = get_field("live");
             $past = get_field("past");
@@ -75,8 +76,16 @@
                     <?php if($past_title):?>
                         <h2><?php echo $past_title;?></h2>
                     <?php endif;?>
-                    <div class="iframe-wrapper">
-                        <iframe allowfullscreen scrolling="no" frameborder="0" src="<?php echo $past;?>" width="100%" height="100%"></iframe>
+                    <div class="iframe-wrapperbbbb">
+                        <!-- <iframe allowfullscreen scrolling="no" frameborder="0" src="<?php echo $past;?>" width="100%" height="100%"></iframe> -->
+                        <style>.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 100vh; overflow: hidden; max-width: 100%; /*height: auto;*/ } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; }</style>
+                            <div class='embed-container'>
+                                <iframe frameborder="0" scrolling="no" align="middle"
+                                    src="http://player.piksel.com/player.php?p=dek7nez2&wmode=transparent&r=true"
+                                    height="400" width="640"
+                                    allowtransparency="true" allowfullscreen>
+                                </iframe>
+                            </div>
                     </div>
                 </div><!--.past-->
             <?php endif;?>
