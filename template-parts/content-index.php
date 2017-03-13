@@ -52,7 +52,10 @@
         </div><!--.column-1-->
         <div class="column-2">
             <div class="row-1">
-                <a href="<?php bloginfo('url'); ?>/im-new">
+                <?php $welcome_link = get_field("welcome_link");?>
+                <?php if($welcome_link):?>
+                    <a href="<?php echo $welcome_link;?>">
+                <?php endif;?>
 	            <?php $welcome_title = get_field("welcome_message_title");
 	            if($welcome_title):?>
                     <div class="title">
@@ -65,7 +68,9 @@
                         <?php echo $welcome_copy;?>
                     </div><!--.copy-->
 	            <?php endif;?>
-                </a>
+                <?php if($welcome_link):?>
+                    </a>
+                <?php endif;?>
             </div><!--.row-1-->
             <div class="row-2 copy">
                 <?php $welcome_schedule = get_field("welcome_schedule");
@@ -96,7 +101,7 @@
 		        <?php endif;?>
 		        <?php if($more_button_text && $link):?>
                     <div class="more">
-                        <a href="<?php echo $link;?>">
+                        <a href="<?php echo $link;?>" target="_blank">
 					        <?php echo $more_button_text;?>
                         </a>
                     </div><!--.more-->

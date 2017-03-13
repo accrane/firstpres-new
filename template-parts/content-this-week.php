@@ -48,7 +48,8 @@
             <?php $image = get_field("section_{$i}_image");
             $title = get_field("section_{$i}_title");
             $copy = get_field("section_{$i}_copy");
-            $link = get_field("section_{$i}_link");?>
+            $link = get_field("section_{$i}_link");
+            $button_text = get_field("section_{$i}_button_text");?>
             <div class="overlay">
                 <?php if($title):?>
                     <div class="title">
@@ -60,10 +61,10 @@
                         <?php echo $copy;?>
                     </div><!--.copy-->
                 <?php endif;?>
-                <?php if($more_button_text && $link):?>
+                <?php if(($more_button_text ||$button_text) && $link):?>
                     <div class="more">
-                        <a href="<?php echo $link;?>">
-                            <?php echo $more_button_text;?>
+                        <a href="<?php echo $link;?>" target="_blank">
+                            <?php if($button_text) echo $button_text; else echo $more_button_text;?>
                         </a>
                     </div><!--.more-->
                 <?php endif;?>
