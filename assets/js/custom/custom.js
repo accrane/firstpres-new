@@ -228,14 +228,11 @@ jQuery(document).ready(function ($) {
                         scroll = baseScroll;
                     }
                     scroll = scroll > 0 ? scroll : 0;
-                    $('html').animate({
-                        scrollTop: scroll
-                    }, 0);
+                    $window.scrollTop(scroll);
                 }
             }
         });
     }
-
     $('a').click(anchor_scroll_capsule);
     $(window).load(function () {
         anchor_scroll_capsule();
