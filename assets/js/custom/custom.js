@@ -133,12 +133,17 @@ jQuery(document).ready(function ($) {
             var $anchor = $main_menu_parent.offset().top;
             var html_margin = $html.length ? parseFloat($html.css('marginTop')) : 0;
             if ($anchor <= $window.scrollTop() + html_margin && window.innerWidth >= 600) {
+                if(window.innerWidth>900){
+                    var padding_string = "10px 5%";
+                } else {
+                    var padding_string = "10px 10%";
+                }
                 $main_menu.css({
                     position: "fixed",
                     top: html_margin+"px",
                     left: "0",
                     width: "100%",
-                    padding: "10px 10%",
+                    padding: padding_string,
                     backgroundColor: "white",
                     margin: "0",
                     zIndex: 3
@@ -152,7 +157,7 @@ jQuery(document).ready(function ($) {
                     top: html_margin + main_menu_height + "px",
                     left: "0",
                     width: "100%",
-                    padding: "10px 10%",
+                    padding: "10px 2%",
                     backgroundColor: "#05264d",
                     margin: "0",
                     zIndex: 3
