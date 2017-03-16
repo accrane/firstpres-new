@@ -11,7 +11,7 @@
     if($sections):?>
         <div class="row-1">
             <div class="wrapper sub-menu">
-                <ul id="sub-menu">
+                <ul id="sub-menu" class="expanded">
                     <?php foreach($sections as $section):
                         if($section['menu_title']):?>
                             <li><a href="#<?php echo sanitize_title_with_dashes($section['menu_title']);?>"><?php echo $section['menu_title'];?></a></li>

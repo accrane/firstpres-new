@@ -807,14 +807,14 @@ html[xmlns] .flexslider .slides{display:block}
 .resource-link a:hover{background-color:#145a96}
 #masthead>.wrapper>.row-1{width:95%;margin:0 auto 10px auto;text-align:center}
 @media screen and (min-width:600px){#masthead>.wrapper>.row-1{width:90%;margin:0 auto}
-}#masthead>.wrapper>.row-1 .new{display:inline-block;margin:0 20px 0 0;background-color:#145a96;width:100px;text-align:center}
+}#masthead>.wrapper>.row-1 .new{display:inline-block;margin:0 20px 0 0;background-color:#145a96;width:110px;text-align:center}
 @media screen and (min-width:600px){#masthead>.wrapper>.row-1 .new{float:left;width:auto}
-}#masthead>.wrapper>.row-1 .new a{display:block;color:white;padding:10px;text-decoration:none;text-transform:uppercase;font-size:14px;font-family:Elkwood,serif;letter-spacing:2px}
-@media screen and (min-width:600px){#masthead>.wrapper>.row-1 .new a{font-size:16px}
-}#masthead>.wrapper>.row-1 .week{display:inline-block;background-color:#145a96;width:100px;text-align:center}
+}#masthead>.wrapper>.row-1 .new a{display:block;color:white;padding:5px;text-decoration:none;text-transform:uppercase;font-size:14px;font-family:Elkwood,serif;letter-spacing:2px}
+@media screen and (min-width:600px){#masthead>.wrapper>.row-1 .new a{font-size:16px;padding:10px}
+}#masthead>.wrapper>.row-1 .week{display:inline-block;background-color:#145a96;width:110px;text-align:center}
 @media screen and (min-width:600px){#masthead>.wrapper>.row-1 .week{float:right;width:auto}
-}#masthead>.wrapper>.row-1 .week a{display:block;color:white;padding:10px;text-decoration:none;text-transform:uppercase;font-size:14px;font-family:Elkwood,serif;letter-spacing:2px}
-@media screen and (min-width:600px){#masthead>.wrapper>.row-1 .week a{font-size:16px}
+}#masthead>.wrapper>.row-1 .week a{display:block;color:white;padding:5px;text-decoration:none;text-transform:uppercase;font-size:14px;font-family:Elkwood,serif;letter-spacing:2px}
+@media screen and (min-width:600px){#masthead>.wrapper>.row-1 .week a{font-size:16px;padding:10px}
 }#masthead>.wrapper>.row-2{width:95%;margin:0 auto;text-align:center}
 @media screen and (min-width:600px){#masthead>.wrapper>.row-2{width:90%}
 }#masthead>.wrapper>.row-2 a{margin:0 0 10px 0;display:inline-block;width:50%}
@@ -926,7 +926,8 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-page>.row-1>.wrapper ul#sub-menu,.template-about>.row-1>.wrapper ul#sub-menu,.template-sitemap>.row-1>.wrapper ul#sub-menu,.error-404>.row-1>.wrapper ul#sub-menu,.template-worship>.row-1>.wrapper ul#sub-menu,.template-this-week>.row-1>.wrapper ul#sub-menu,.template-live>.row-1>.wrapper ul#sub-menu{width:90%}
 }.template-page>.row-1>.wrapper ul#sub-menu.toggled,.template-about>.row-1>.wrapper ul#sub-menu.toggled,.template-sitemap>.row-1>.wrapper ul#sub-menu.toggled,.error-404>.row-1>.wrapper ul#sub-menu.toggled,.template-worship>.row-1>.wrapper ul#sub-menu.toggled,.template-this-week>.row-1>.wrapper ul#sub-menu.toggled,.template-live>.row-1>.wrapper ul#sub-menu.toggled{display:block}
 @media screen and (min-width:600px){.template-page>.row-1>.wrapper ul#sub-menu,.template-about>.row-1>.wrapper ul#sub-menu,.template-sitemap>.row-1>.wrapper ul#sub-menu,.error-404>.row-1>.wrapper ul#sub-menu,.template-worship>.row-1>.wrapper ul#sub-menu,.template-this-week>.row-1>.wrapper ul#sub-menu,.template-live>.row-1>.wrapper ul#sub-menu{display:block}
-}.template-page>.row-1>.wrapper ul#sub-menu li,.template-about>.row-1>.wrapper ul#sub-menu li,.template-sitemap>.row-1>.wrapper ul#sub-menu li,.error-404>.row-1>.wrapper ul#sub-menu li,.template-worship>.row-1>.wrapper ul#sub-menu li,.template-this-week>.row-1>.wrapper ul#sub-menu li,.template-live>.row-1>.wrapper ul#sub-menu li{text-align:center;list-style-type:none}
+}.template-page>.row-1>.wrapper ul#sub-menu.expanded,.template-about>.row-1>.wrapper ul#sub-menu.expanded,.template-sitemap>.row-1>.wrapper ul#sub-menu.expanded,.error-404>.row-1>.wrapper ul#sub-menu.expanded,.template-worship>.row-1>.wrapper ul#sub-menu.expanded,.template-this-week>.row-1>.wrapper ul#sub-menu.expanded,.template-live>.row-1>.wrapper ul#sub-menu.expanded{display:block}
+.template-page>.row-1>.wrapper ul#sub-menu li,.template-about>.row-1>.wrapper ul#sub-menu li,.template-sitemap>.row-1>.wrapper ul#sub-menu li,.error-404>.row-1>.wrapper ul#sub-menu li,.template-worship>.row-1>.wrapper ul#sub-menu li,.template-this-week>.row-1>.wrapper ul#sub-menu li,.template-live>.row-1>.wrapper ul#sub-menu li{text-align:center;list-style-type:none}
 @media screen and (min-width:600px){.template-page>.row-1>.wrapper ul#sub-menu li,.template-about>.row-1>.wrapper ul#sub-menu li,.template-sitemap>.row-1>.wrapper ul#sub-menu li,.error-404>.row-1>.wrapper ul#sub-menu li,.template-worship>.row-1>.wrapper ul#sub-menu li,.template-this-week>.row-1>.wrapper ul#sub-menu li,.template-live>.row-1>.wrapper ul#sub-menu li{display:inline-block}
 }.template-page>.row-1>.wrapper ul#sub-menu li:first-child a:before,.template-about>.row-1>.wrapper ul#sub-menu li:first-child a:before,.template-sitemap>.row-1>.wrapper ul#sub-menu li:first-child a:before,.error-404>.row-1>.wrapper ul#sub-menu li:first-child a:before,.template-worship>.row-1>.wrapper ul#sub-menu li:first-child a:before,.template-this-week>.row-1>.wrapper ul#sub-menu li:first-child a:before,.template-live>.row-1>.wrapper ul#sub-menu li:first-child a:before{display:none}
 .template-page>.row-1>.wrapper ul#sub-menu li a,.template-about>.row-1>.wrapper ul#sub-menu li a,.template-sitemap>.row-1>.wrapper ul#sub-menu li a,.error-404>.row-1>.wrapper ul#sub-menu li a,.template-worship>.row-1>.wrapper ul#sub-menu li a,.template-this-week>.row-1>.wrapper ul#sub-menu li a,.template-live>.row-1>.wrapper ul#sub-menu li a{color:white;text-decoration:none;font-size:20px;text-transform:uppercase;font-family:Elkwood,serif;letter-spacing:1px}
