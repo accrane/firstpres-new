@@ -71,8 +71,8 @@
                         <h2><?php echo $past_title;?></h2>
                     <?php endif;?>
                     <div class="iframe-wrapperbbbb">
-                        <style>.embed-container-2 { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 100vh; overflow: hidden; max-width: 100%; /*height: auto;*/ } .embed-container-2 iframe, .embed-container-2 object, .embed-container-2 embed { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; }</style>
-                            <div class='embed-container-2'>
+                        <style>.embed-container-2 { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container-2 iframe, .embed-container-2 object, .embed-container-2 embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+                        <div class='embed-container-2'>
                                 <iframe frameborder="0" scrolling="no" align="middle"
                                     src="http://player.piksel.com/player.php?p=dek7nez2&wmode=transparent&r=true"
                                     height="400" width="640"
