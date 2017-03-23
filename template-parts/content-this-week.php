@@ -3,43 +3,49 @@
  * Template part for displaying page content in page-about.php.
  *
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class("template-this-week"); ?>>
     <?php $sections = get_field("sections");
     $blog_title = get_field("blog_title");
+    $row_4_title = get_field("row_4_title");
+    $tickets_title = get_field("tickets_title");
+    $newsletter_title = get_field("newsletter_title");
     if($sections):?>
         <div class="row-1">
             <div class="wrapper sub-menu">
                 <ul id="sub-menu">
-                    <?php if($blog_title):?>
-                        <li><a href="#<?php echo $blog_title;?>"><?php echo $blog_title;?></a></li>
-                    <?php endif;
-                    foreach($sections as $section):
-                        if($section['menu_title']):
-                            
-
-                            ?>
+	                <?php if($row_4_title):?>
+                        <li><a href="#<?php echo sanitize_title_with_dashes($row_4_title);?>"><?php echo $row_4_title;?></a></li>
+	                <?php endif;?>
+                    <?php foreach($sections as $section):
+                        if($section['menu_title']):?>
                             <li>
                                 <a href="#<?php echo sanitize_title_with_dashes($section['menu_title']);?>">
-                                <?php if($section['menu_title'] == 'Eat @ First') {echo '<span class="js-at-word">';} ?><?php echo $section['menu_title'];?><?php if($section['menu_title'] == 'Eat @ First') {echo '</span>';}  ?>
+                                    <?php if($section['menu_title'] == 'Eat @ First') :
+                                        echo '<span class="js-at-word">';
+                                    endif;?>
+                                            <?php echo $section['menu_title'];?>
+                                    <?php if($section['menu_title'] == 'Eat @ First') :
+                                        echo '</span>';
+                                    endif;?>
                                 </a>
                             </li>
                         <?php endif;
                     endforeach;?>
+	                <?php if($tickets_title):?>
+                        <li><a href="#<?php echo sanitize_title_with_dashes($tickets_title);?>"><?php echo $tickets_title;?></a></li>
+	                <?php endif;?>
+	                <?php if($newsletter_title):?>
+                        <li><a href="#<?php echo sanitize_title_with_dashes($newsletter_title);?>"><?php echo $newsletter_title;?></a></li>
+	                <?php endif;?>
+	                <?php if($blog_title):?>
+                        <li><a href="#<?php echo sanitize_title_with_dashes($blog_title);?>"><?php echo $blog_title;?></a></li>
+	                <?php endif;?>
                 </ul>
             </div><!--.wrapper-->
         </div><!--.row-1-->
     <?php endif;?>
-    <?php //$image = get_field("banner");
-    //if($image):?>
-        <!-- <div class="row-2">
-            <img src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>">
-        </div> -->
-    <?php //endif;?>
-
-
 <section class="now-at-top">
     <div class="row-4 clear-bottom">
         <?php $more_button_text = get_field("more_button_text");
@@ -121,6 +127,96 @@
             <?php endif;?>
         </div><!--.column-2-->
     </div><!--.row-3-->
+    <?php $row_4_copy = get_field("row_4_copy");?>
+    <?php if($row_4_title):?>
+        <a name="<?php echo sanitize_title_with_dashes($row_4_title);?>"></a>
+    <?php endif;?>
+    <div class="row-big-event clear-bottom row-4">
+		<?php if($row_4_title):?>
+            <div class="title">
+				<?php if (strpos($row_4_title, '@') !== false) {
+					$headerClass = 'js-at-word';
+				} else {$headerClass = '';} ?>
+                <h2 class="<?php echo $headerClass; ?>"><?php echo $row_4_title;?></h2>
+            </div><!--.title-->
+		<?php endif;?>
+        <div class="column-1 copy">
+			<?php if($row_4_copy):?>
+				<?php echo $row_4_copy?>
+			<?php endif;?>
+        </div><!--.column-1-->
+        <div class="column-2">
+            <?php $tn_title = get_field("tickets_and_newsletter_title");
+            $tn_link_id = get_field("tickets_and_newsletter_link");
+            $tickets_repeater = get_field("tickets_repeater");
+            $newsletter_repeater = get_field("newsletter_repeater");?>
+            <?php if($tn_title):?>
+                <div class="row-1">
+                    <?php if($tn_link_id):?>
+                        <a href="<?php echo wp_get_attachment_url($tn_link_id);?>">
+                    <?php endif;?>
+                    <?php echo $tn_title;?>
+                    <?php if($tn_link_id):?>
+                        </a>
+                    <?php endif;?>
+                </div><!--.row-1-->
+            <?php endif;?>
+            <?php if($tickets_repeater||$newsletter_repeater):?>
+                <div class="row-2 clear-bottom">
+                    <?php if($tickets_repeater&&!empty($tickets_repeater)):?>
+                        <div class="column-1">
+                            <?php if($tickets_title):?>
+                                <a name="<?php echo sanitize_title_with_dashes($tickets_title);?>"></a>
+                                <div class="row-1">
+                                    <?php echo $tickets_title;?>
+                                </div><!--.row-1-->
+                            <?php endif;?>
+                            <div class="row-2">
+                                <?php foreach($tickets_repeater as $item):?>
+                                    <?php if($item['title']):?>
+                                        <div class="item">
+	                                        <?php if($item['link']):?>
+	                                            <a href="<?php echo $item['link'];?>">
+                                            <?php endif;?>
+                                                <?php echo $item['title'];?>
+	                                        <?php if($item['link']):?>
+                                                </a>
+	                                        <?php endif;?>
+                                        </div><!--.item-->
+                                   <?php endif;?>
+                                <?php endforeach;?>
+                            </div><!--.row-2-->
+                        </div><!--.column-1-->
+                    <?php endif;?>
+	                <?php if($newsletter_repeater&&!empty($newsletter_repeater)):?>
+                        <div class="column-2">
+                            <?php if($newsletter_title):?>
+                                <a name="<?php echo sanitize_title_with_dashes($newsletter_title);?>"></a>
+                                <div class="row-1">
+                                    <?php echo $newsletter_title;?>
+                                </div><!--.row-1-->
+                            <?php endif;?>
+                            <div class="row-2">
+	                            <?php foreach($newsletter_repeater as $item):?>
+		                            <?php if($item['title']):?>
+                                        <div class="item">
+				                            <?php if($item['link']):?>
+                                            <a href="<?php echo $item['link'];?>">
+					                            <?php endif;?>
+					                            <?php echo $item['title'];?>
+					                            <?php if($item['link']):?>
+                                            </a>
+			                            <?php endif;?>
+                                        </div><!--.item-->
+		                            <?php endif;?>
+	                            <?php endforeach;?>
+                            </div><!--.row-2-->
+                        </div><!--.column-2-->
+                    <?php endif;?>
+                </div><!--.row-2-->
+            <?php endif;?>
+        </div><!--.column-2-->
+    </div><!--.row-4-->
 	<?php if($sections):
 		for($i=0;$i<count($sections);$i++):
 			$title = $sections[$i]['title'];
@@ -129,7 +225,7 @@
 			$image = $sections[$i]['image'];
             $imageLink = $sections[$i]['link'];?>
             <a name="<?php echo sanitize_title_with_dashes($menu_title);?>"></a>
-            <div class="content-row clear-bottom row-<?php echo $i+4;?>">
+            <div class="content-row clear-bottom row-<?php echo $i+5;?>">
 				<?php if($title):?>
                     <div class="title">
                     <?php if (strpos($title, '@') !== false) {
@@ -154,7 +250,7 @@
 		<?php endfor;
 	endif;//if for sections?>
     <?php if($blog_title):?>
-        <a name="<?php echo $blog_title;?>"></a>
+        <a name="<?php echo sanitize_title_with_dashes($blog_title);?>"></a>
         <div class="row-blog clear-bottom">
             <?php $image = get_field("blog_image");
             $picker = get_field("blog_picker");?>

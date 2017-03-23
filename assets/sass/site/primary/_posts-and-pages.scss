@@ -760,6 +760,101 @@
   }
 }
 .template-this-week {
+  >.row-big-event {
+    width: 95%;
+    margin: 0 auto;
+    @media screen and (min-width: $tabwidth) {
+      width: 90%;
+    }
+    > .title {
+      clear: both;
+      margin: 30px 0 15px 0;
+      h2 {
+        margin: 0;
+        text-transform: uppercase;
+        color: $color__first-light-blue;
+      }
+    }
+    > .column-1 {
+      width: 100%;
+      margin: 15px 0;
+      @media screen and (min-width: $tabwidth) {
+        width: 60%;
+        float: left;
+        margin: 15px 0 0 0;
+      }
+    }
+    > .column-2 {
+      width: 100%;
+      margin: 10px 0;
+      font-family: Elkwood, serif;
+      @media screen and (min-width: $tabwidth) {
+        width: 35.5%;
+        margin: 0 0 0 4.5%;
+        float: left;
+      }
+      > .row-1 {
+        background-color: $color__first-blue;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 20px;
+        @media screen and (min-width: $deskwidth) {
+          font-size: 25px;
+        }
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+      > .row-2 {
+        text-align: center;
+        > .column-1 {
+          margin: 0 0 10px 0;
+          @media screen and (min-width: $deskwidth) {
+            margin: 0 10px 0 0;
+          }
+        }
+        > .column-1, > .column-2 {
+          width: 100%;
+          display: block;
+          float: left;
+          background-color: $color__first-blue;
+          color: white;
+          @media screen and (min-width: $deskwidth) {
+            width: calc(50% - 5px);
+          }
+          > .row-1 {
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 10px;
+            @media screen and (min-width: $deskwidth) {
+              font-size: 20px;
+            }
+          }
+          > .row-2 {
+            padding: 10px;
+            .item {
+              background-color: $color__first-dark-blue;
+              margin: 10px 0 0 0;
+              padding: 10px;
+              font-size: 18px;
+              &:first-child {
+                margin: 0;
+              }
+              a {
+                color: white;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   >.row-blog {
     width: 95%;
     margin: 0 auto;

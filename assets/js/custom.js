@@ -250,7 +250,7 @@ jQuery(document).ready(function ($) {
     ------------------------------------*/
     
     $('.js-at-word').html(function(i, v) {
-        return v.replace(/\s(.*?)\s/, ' <span class=change-at>$1</span> ');
+        return v.replace(/\s(@)\s/, ' <span class=change-at>$1</span> ');
     });
 
 
