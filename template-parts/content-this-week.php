@@ -147,11 +147,18 @@
         </div><!--.column-1-->
         <div class="column-2">
             <?php $tn_title = get_field("tickets_and_newsletter_title");
+            $tn_link_id = get_field("tickets_and_newsletter_link");
             $tickets_repeater = get_field("tickets_repeater");
             $newsletter_repeater = get_field("newsletter_repeater");?>
             <?php if($tn_title):?>
                 <div class="row-1">
+                    <?php if($tn_link_id):?>
+                        <a href="<?php echo wp_get_attachment_url($tn_link_id);?>">
+                    <?php endif;?>
                     <?php echo $tn_title;?>
+                    <?php if($tn_link_id):?>
+                        </a>
+                    <?php endif;?>
                 </div><!--.row-1-->
             <?php endif;?>
             <?php if($tickets_repeater||$newsletter_repeater):?>

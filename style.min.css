@@ -1021,7 +1021,8 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-this-week>.row-big-event>.column-2{width:35.5%;margin:0 0 0 4.5%;float:left}
 }.template-this-week>.row-big-event>.column-2>.row-1{background-color:#145a96;padding:10px;margin-bottom:10px;width:100%;color:white;text-align:center;text-transform:uppercase;font-size:20px}
 @media screen and (min-width:1200px){.template-this-week>.row-big-event>.column-2>.row-1{font-size:25px}
-}.template-this-week>.row-big-event>.column-2>.row-2{text-align:center}
+}.template-this-week>.row-big-event>.column-2>.row-1 a{color:inherit;text-decoration:none}
+.template-this-week>.row-big-event>.column-2>.row-2{text-align:center}
 .template-this-week>.row-big-event>.column-2>.row-2>.column-1{margin:0 0 10px 0}
 @media screen and (min-width:1200px){.template-this-week>.row-big-event>.column-2>.row-2>.column-1{margin:0 10px 0 0}
 }.template-this-week>.row-big-event>.column-2>.row-2>.column-1,.template-this-week>.row-big-event>.column-2>.row-2>.column-2{width:100%;display:block;float:left;background-color:#145a96;color:white}
