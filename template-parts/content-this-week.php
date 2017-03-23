@@ -153,7 +153,7 @@
             <?php if($tn_title):?>
                 <div class="row-1">
                     <?php if($tn_link):?>
-                        <a href="<?php echo $tn_link;?>">
+                        <a href="<?php echo $tn_link;?>" target="_blank">
                     <?php endif;?>
                     <?php echo $tn_title;?>
                     <?php if($tn_link):?>
@@ -176,7 +176,7 @@
                                     <?php if($item['title']):?>
                                         <div class="item">
 	                                        <?php if($item['link']):?>
-	                                            <a href="<?php echo $item['link'];?>">
+	                                            <a href="<?php echo $item['link'];?>" target="_blank">
                                             <?php endif;?>
                                                 <?php echo $item['title'];?>
 	                                        <?php if($item['link']):?>
@@ -201,7 +201,7 @@
 		                            <?php if($item['title']):?>
                                         <div class="item">
 				                            <?php if($item['link']):?>
-                                            <a href="<?php echo $item['link'];?>">
+                                            <a href="<?php echo $item['link'];?>" target="_blank">
 					                            <?php endif;?>
 					                            <?php echo $item['title'];?>
 					                            <?php if($item['link']):?>

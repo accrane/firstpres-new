@@ -840,13 +840,14 @@
             .item {
               background-color: $color__first-dark-blue;
               margin: 10px 0 0 0;
-              padding: 10px;
               font-size: 18px;
               &:first-child {
                 margin: 0;
               }
               a {
+                padding: 10px;
                 color: white;
+                display: block;
                 text-decoration: none;
               }
             }
