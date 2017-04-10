@@ -15,6 +15,7 @@
   }
   strong, b, em {
     font-weight: 800;
+    font-family: Hero, serif;
   }
   a {
     text-decoration: none;
@@ -69,6 +70,28 @@
       }
       ul.sub-menu {
         margin: 0;
+      }
+    }
+  }
+  table {
+    border: 1px solid grey;
+    font-size: 10px;
+    @media screen and (min-width: $tinywidth){
+      font-size: 12px;
+    }
+    @media screen and (min-width: $tabwidth){
+      font-size: 15px;
+    }
+    tr{
+      td {
+        padding: 2px;
+        border: 1px solid grey;
+        @media screen and (min-width: $tinywidth){
+          padding: 5px;
+        }
+        @media screen and (min-width: $tabwidth){
+          padding: 10px;
+        }
       }
     }
   }
