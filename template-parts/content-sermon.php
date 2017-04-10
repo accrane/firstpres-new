@@ -44,7 +44,7 @@
                                     <td></td>
                                 <?php endif;?>
 	                            <?php if($download_title):?>
-                                    <td><?php echo $download_title;?></td>
+                                    <td><a href="<?php echo $download;?>"><?php echo $download_title;?></a></td>
 	                            <?php else:?>
                                     <td></td>
                                 <?php endif;?>
