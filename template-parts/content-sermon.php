@@ -46,7 +46,7 @@
 	                            <?php if($download_title):?>
                                     <td>
                                         <?php if($download):?>
-                                            <a href="<?php echo $download;?>">
+                                            <a href="<?php echo $download;?>" target="_blank">
                                         <?php endif;?>
                                             <?php echo $download_title;?>
                                         <?php if($download):?>
@@ -57,7 +57,7 @@
                                     <td></td>
                                 <?php endif;?>
 	                            <?php if($audio_file):?>
-                                    <td><a href="<?php echo $audio_file;?>"><?php echo !empty($audio_title) ? $audio_title: "Audio";?></a></td>
+                                    <td><a href="<?php echo $audio_file;?>" target="_blank"><?php echo !empty($audio_title) ? $audio_title: "Audio";?></a></td>
 	                            <?php else:?>
                                     <td></td>
                                 <?php endif;?>
