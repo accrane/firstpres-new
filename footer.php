@@ -12,7 +12,6 @@
 ?>
 
 	</div><!-- #content -->
-    <?php echo memory_get_usage();?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
         <div class="row-1">
             <div class="column column-1">
@@ -218,7 +217,6 @@
         </div><!--.row-3-->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-    <?php echo memory_get_usage();?>
 
 <?php wp_footer(); ?>
 

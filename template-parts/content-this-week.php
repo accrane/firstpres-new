@@ -12,7 +12,6 @@
     $tickets_title = get_field("tickets_title");
     $newsletter_title = get_field("newsletter_title");
     if($sections):?>
-    <?php echo memory_get_usage();?>
         <div class="row-1">
             <div class="wrapper sub-menu">
                 <ul id="sub-menu">
@@ -47,7 +46,6 @@
             </div><!--.wrapper-->
         </div><!--.row-1-->
     <?php endif;?>
-    <?php echo memory_get_usage();?>
 <section class="now-at-top">
     <div class="row-4 clear-bottom">
         <?php $more_button_text = get_field("more_button_text");
@@ -105,7 +103,6 @@
         <?php endfor;?>
     </div><!--.row-4-->
 </section>
-    <?php echo memory_get_usage();?>
 
     
     <div class="row-3 clear-bottom">
@@ -220,7 +217,6 @@
             <?php endif;?>
         </div><!--.column-2-->
     </div><!--.row-4-->
-    <?php echo memory_get_usage();?>
 	<?php if($sections):
 		for($i=0;$i<count($sections);$i++):
 			$title = $sections[$i]['title'];
@@ -253,7 +249,6 @@
             </div><!--.row-#-->
 		<?php endfor;
 	endif;//if for sections?>
-    <?php echo memory_get_usage();?>
     <?php if($blog_title):?>
         <a name="<?php echo sanitize_title_with_dashes($blog_title);?>"></a>
         <div class="row-blog clear-bottom">
@@ -281,5 +276,4 @@
             <?php endif;?>
         </div><!--.row-4-->
     <?php endif;?>
-    <?php echo memory_get_usage();?>
 </article><!-- #post-## -->
