@@ -22,6 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
+    <?php echo memory_get_usage();?>
     <div id="hamburger">
         <div class="wrapper">
             <i class="fa fa-bars"></i>
