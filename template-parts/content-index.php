@@ -42,13 +42,8 @@
         </div><!--.wrapper-->
     </div><!--.row-2-->
     <div class="row-3">
-        <div class="column-1" <?php $image = get_field("welcome_image");
-            if($image):
-                echo 'style="background-image: url('.$image['sizes']['large'].');"';
-            endif;?>>
-            <?php if($image): ?>
-                <img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
-            <?php endif; ?>
+        <div class="column-1">
+            <iframe src="https://www.youtube.com/embed/8QJZ1OcMen0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
         </div><!--.column-1-->
         <div class="column-2">
             <div class="row-1">
