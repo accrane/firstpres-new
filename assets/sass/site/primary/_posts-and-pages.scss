@@ -59,6 +59,7 @@
               }
               input[type=search]{
                 width: 120px;
+                color: $color__first-blue;
                 @media screen and (min-width: $tabwidth) {
                   width: 200px;
                 }

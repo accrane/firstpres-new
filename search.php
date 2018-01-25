@@ -7,42 +7,51 @@
  * @package ACStarter
  */
 
-get_header(); ?>
-
-	<section id="primary" class="content-area">
+get_header("interior"); ?>
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-		<?php
-		if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'acstarter' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
+            <?php if(have_posts()):?>
+                <section <?php post_class("template-archive"); ?>>
+                    <div class="row-2 clear-bottom">
+                        <div class="column-1">
+                            <div class="title">
+                                <header>
+                                    <h1>Search</h1>
+                                    <h2><?php the_search_query();?></h2>
+                                </header><!-- .page-header -->
+                            </div><!--.title-->
+                            <div class="posts">
+                                <?php while(have_posts()):the_post();?>
+                                    <div class="post clear-bottom">
+                                        <div class="title">
+                                            <header>
+                                                <h2>
+                                                    <a href="<?php echo get_the_permalink();?>">
+                                                        <?php the_title();?>
+                                                    </a>
+                                                </h2>
+                                            </header>
+                                        </div><!--.title-->
+	                                    <?php if(get_the_excerpt()):?>
+                                            <div class="copy">
+			                                    <?php the_excerpt();?>
+												<a href="<?php the_permalink();?>">
+													<span class="read-more">Read More</span>
+												</a>
+                                            </div><!--.copy-->
+	                                    <?php endif;?>
+                                    </div><!--.post-->
+                                <?php endwhile;?>
+                            </div><!--.posts-->
+                            <?php pagi_posts_nav_default();?>
+                        </div><!--.column-1-->
+                        <div class="column-2">
+                            <?php get_sidebar('archive');?>
+                        </div><!--.column-2-->
+                    </div><!--.row-3-->
+                </section><!-- #post-## -->
+            <?php endif;?>
 		</main><!-- #main -->
-	</section><!-- #primary -->
-
+	</div><!-- #primary -->
 <?php
-get_sidebar();
 get_footer();

@@ -834,7 +834,7 @@ html[xmlns] .flexslider .slides{display:block}
 #masthead>.wrapper>.row-1 .search-bar>.wrapper .search-form form input::-webkit-input-placeholder{color:#145a96}
 #masthead>.wrapper>.row-1 .search-bar>.wrapper .search-form form input::placeholder{color:#145a96}
 #masthead>.wrapper>.row-1 .search-bar>.wrapper .search-form form input:-webkit-input-placeholder{color:#145a96}
-#masthead>.wrapper>.row-1 .search-bar>.wrapper .search-form form input[type=search]{width:120px}
+#masthead>.wrapper>.row-1 .search-bar>.wrapper .search-form form input[type=search]{width:120px;color:#145a96}
 @media screen and (min-width:600px){#masthead>.wrapper>.row-1 .search-bar>.wrapper .search-form form input[type=search]{width:200px}
 }#masthead>.wrapper>.row-1 .search-bar>.wrapper .search-form form input[type=submit]{line-height:1.2;font-size:16px;padding:5px;border:1px solid #145a96;background-color:#145a96;color:white;text-shadow:none;box-shadow:none}
 #masthead>.wrapper>.row-1 .search-bar>.wrapper .fa-search{float:right;display:block;color:#145a96;margin:15px 20px 0 10px}
@@ -898,7 +898,7 @@ html[xmlns] .flexslider .slides{display:block}
 .template-index>.row-1>.overlay-wrapper .search-bar>.wrapper .search-form form input::-webkit-input-placeholder{color:#145a96}
 .template-index>.row-1>.overlay-wrapper .search-bar>.wrapper .search-form form input::placeholder{color:#145a96}
 .template-index>.row-1>.overlay-wrapper .search-bar>.wrapper .search-form form input:-webkit-input-placeholder{color:#145a96}
-.template-index>.row-1>.overlay-wrapper .search-bar>.wrapper .search-form form input[type=search]{width:120px}
+.template-index>.row-1>.overlay-wrapper .search-bar>.wrapper .search-form form input[type=search]{width:120px;color:#145a96}
 @media screen and (min-width:600px){.template-index>.row-1>.overlay-wrapper .search-bar>.wrapper .search-form form input[type=search]{width:200px}
 }.template-index>.row-1>.overlay-wrapper .search-bar>.wrapper .search-form form input[type=submit]{line-height:1.2;font-size:16px;padding:5px;border:1px solid #145a96;background-color:#145a96;color:white;text-shadow:none;box-shadow:none}
 .template-index>.row-1>.overlay-wrapper .search-bar>.wrapper .fa-search{float:right;display:block;color:white;margin:15px 20px 0 10px}
