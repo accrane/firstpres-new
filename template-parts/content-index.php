@@ -8,31 +8,40 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class("template-index"); ?>>
     <div class="row-1">
-        <div class="overlay">
-            <div class="row-1">
-                <h1><img src="<?php echo get_template_directory_uri()."/images/logo2.png";?>" alt="<?php echo get_bloginfo("name");?>"></h1>
-            </div>
-            <div class="row-2">
-                <div class="new">
-                    <?php $post = get_post(186);
-                    setup_postdata($post);?>
-                    <a href="<?php echo get_the_permalink();?>">
-                        <?php the_title();?>
-                    </a>
-                    <?php $post = get_post(16);
-                    setup_postdata($post); ?>
-                </div><!--.new-->
-                <div class="week">
-	                <?php $post = get_post(258);
-	                setup_postdata($post);?>
-                    <a href="<?php echo get_the_permalink();?>">
-		                <div class="js-at-word"><?php the_title();?></div>
-                    </a>
-	                <?php $post = get_post(16);
-	                setup_postdata($post); ?>
-                </div><!--.week-->
-            </div>
-        </div><!--.overlay-->
+        <div class="overlay-wrapper">
+            <div class="search-bar clear-bottom">
+                <div class="clear-bottom"></div><!--.clear-bottom-->
+                <div class="wrapper">
+                    <i class="fa fa-search"></i>
+                    <div class="search-form"><?php get_search_form();?></div><!--.search-form-->
+                </div><!--.wrapper-->
+            </div><!--.search-bar-->
+            <div class="overlay">
+                <div class="row-1">
+                    <h1><img src="<?php echo get_template_directory_uri()."/images/logo2.png";?>" alt="<?php echo get_bloginfo("name");?>"></h1>
+                </div>
+                <div class="row-2">
+                    <div class="new">
+                        <?php $post = get_post(186);
+                        setup_postdata($post);?>
+                        <a href="<?php echo get_the_permalink();?>">
+                            <?php the_title();?>
+                        </a>
+                        <?php $post = get_post(16);
+                        setup_postdata($post); ?>
+                    </div><!--.new-->
+                    <div class="week">
+                        <?php $post = get_post(258);
+                        setup_postdata($post);?>
+                        <a href="<?php echo get_the_permalink();?>">
+                            <div class="js-at-word"><?php the_title();?></div>
+                        </a>
+                        <?php $post = get_post(16);
+                        setup_postdata($post); ?>
+                    </div><!--.week-->
+                </div>
+            </div><!--.overlay-->
+        </div><!--.overlay-wrapper-->
         <img src="<?php echo get_template_directory_uri()."/images/homebanner.jpg";?>" alt="charlotte skyline">
     </div><!--.row-1-->
     <div class="row-2">

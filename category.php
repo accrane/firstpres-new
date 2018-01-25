@@ -16,8 +16,8 @@ get_header("interior"); ?>
                         <div class="column-1">
                             <div class="title">
                                 <header>
-                                    <h1>Archive</h1>
-                                    <?php echo the_archive_title( '<h2>', '</h2>' );?>
+                                    <h1>Category</h1>
+                                    <h2><?php single_cat_title();?></h2>
                                 </header><!-- .page-header -->
                             </div><!--.title-->
                             <div class="posts">

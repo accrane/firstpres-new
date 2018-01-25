@@ -118,6 +118,14 @@ jQuery(document).ready(function ($) {
             $hamburger.addClass('toggled');
         }
     });
+    $('.fa-search').click(function () {
+        var $search = $('.search-bar');
+        if ($search.hasClass('toggled')) {
+            $search.removeClass('toggled');
+        } else {
+            $search.addClass('toggled');
+        }
+    });
     if ($('.wrapper.main-menu').length > 0) {
         var $html = $('html');
         var $main_menu = $('.wrapper.main-menu');

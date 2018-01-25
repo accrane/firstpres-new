@@ -49,6 +49,13 @@
                     </a>
 	                <?php wp_reset_postdata();?>
                 </div><!--.week-->
+				<div class="search-bar clear-bottom">
+					<div class="clear-bottom"></div><!--.clear-bottom-->
+					<div class="wrapper">
+						<i class="fa fa-search"></i>
+						<div class="search-form"><?php get_search_form();?></div><!--.search-form-->
+					</div><!--.wrapper-->
+				</div><!--.search-bar-->
             </div><!--.row-1-->
 			<?php if(is_home()): ?>
 	            <h1 class="logo row-2">
