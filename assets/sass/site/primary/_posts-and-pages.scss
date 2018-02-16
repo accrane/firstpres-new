@@ -422,7 +422,7 @@
 }
 .template-page, .template-about, .template-sitemap,
 .error-404, .template-worship, .template-this-week, .template-live, 
-.template-blog {
+.template-events, .template-blog {
   > .row-1 {
     >.wrapper {
       padding: 10px 0;
@@ -802,6 +802,71 @@
               }
               > .hidden {
                 display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.template-events {
+  >.row-3 {
+    >.column-1 {
+      .events-wrapper {
+        .event {
+          margin: 0 0 20px 0;
+          &:last-child {
+            margin: 0;
+          }
+          a {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 800;
+            color: $color__text-main;
+            text-decoration: none;
+            @media screen and (min-width: $deskwidth) {
+              font-size: 14px;
+            }
+            > .column-1 {
+              float: left;
+              width: 40px;
+              font-family: Elkwood, serif;
+              letter-spacing: 2px;
+              @media screen and (min-width: $deskwidth) {
+                width: 70px;
+              }
+              > .row-1 {
+                background-color: $color__first-blue;
+                color: white;
+                text-align: center;
+                font-size: 12px;
+                @media screen and (min-width: $deskwidth) {
+                  font-size: 20px;
+                }
+              }
+              > .row-2 {
+                background-color: $color__first-dark-blue;
+                color: white;
+                text-align: center;
+                font-size: 12px;
+                @media screen and (min-width: $deskwidth) {
+                  font-size: 20px;
+                }
+
+              }
+            }
+            > .column-2 {
+              float: left;
+              width: calc(100% - 40px);
+              padding-left: 5px;
+              font-family: Elkwood, serif;
+              letter-spacing: 2px;
+              font-size: 14px;
+              position: relative;
+              @media screen and (min-width: $deskwidth) {
+                width: calc(100% - 70px);
+                font-size: 20px;
               }
             }
           }

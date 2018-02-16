@@ -65,6 +65,9 @@
                                 </a>
                             </div><!--.event-->
                         <?php endwhile;?>
+                        <div class="resource-link">
+                            <a href="<?php bloginfo('url'); ?>/events">SEE A COMPLETE LIST OF EVENTS</a>
+                        </div>
                     <?php endif;?>
                 </div><!--.list-->
             </div><!--.column-1-->
