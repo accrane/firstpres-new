@@ -93,6 +93,9 @@
             $copy = get_field("section_{$i}_copy");
             $link = get_field("section_{$i}_link");?>
             <div class="overlay">
+                <?php if($link):?>
+                    <a href="<?php echo $link;?>"></a>
+                <?php endif;?>
 		        <?php if($title):?>
                     <div class="title">
 				        <h2><?php echo $title;?><h2>
@@ -119,22 +122,22 @@
                 </div><!--.row-1-->
             <?php endif;?>
             <div class="row-2">
-	            <?php if($image):?>
+                <?php if($image):?>
                     <img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
-	            <?php endif;?>
+                <?php endif;?>
                 <?php if($title):?>
                     <div class="title">
                         <?php echo $title;?>
                     </div>
                 <?php endif;?>
             </div><!--.row-2-->
-	        <?php if($i%2===0):?>
+            <?php if($i%2===0):?>
                 <div class="row-1">
-			        <?php if($image):?>
+                    <?php if($image):?>
                         <img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
-			        <?php endif;?>
+                    <?php endif;?>
                 </div><!--.row-1-->
-	        <?php endif;?>
+            <?php endif;?>
         </div><!--.column-#-->
         <?php endfor;?>
     </div><!--.row-4-->

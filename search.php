@@ -46,7 +46,7 @@ get_header("interior"); ?>
                             <?php pagi_posts_nav_default();?>
                         </div><!--.column-1-->
                         <div class="column-2">
-                            <?php get_sidebar('archive');?>
+                            <?php //get_sidebar('archive');?>
                         </div><!--.column-2-->
                     </div><!--.row-3-->
                 </section><!-- #post-## -->

@@ -337,13 +337,15 @@
       &:hover {
         >.overlay {
           // display: block;
-          opacity: 1;
+          @media screen and (min-width: $tabwidth) {
+            opacity: 1;
+          }
         }
       }
       >.overlay {
         // display: none;
-        opacity: 0;
         position: absolute;
+        opacity: 0;
         background-color: $color__first-blue-overlay;
         top: 0;
         left: 0;
@@ -353,7 +355,18 @@
         z-index: 2;
         color: white;
         padding: 10px;
-         @include transition(all ease .3s);
+        @include transition(all ease .3s);
+        >a {
+          display: none;
+          @media screen and (max-width: $tabwidth - 1px) {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: block;
+            position: absolute;
+          }
+        }
         .title {
           h2 {
             text-transform: uppercase;
@@ -432,7 +445,6 @@
         margin: 0 auto;
         padding: 0;
         text-align: center;
-        display: none;
         @media screen and (min-width: $tabwidth) {
           width: 90%;
         }

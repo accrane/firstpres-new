@@ -951,9 +951,11 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-index>.row-4{width:90%}
 }.template-index>.row-4>.column{position:relative}
 @media screen and (min-width:600px){.template-index>.row-4>.column{width:25%;float:left}
-}.template-index>.row-4>.column:hover>.overlay{opacity:1}
-.template-index>.row-4>.column>.overlay{opacity:0;position:absolute;background-color:rgba(20,90,150,0.8);top:0;left:0;width:100%;height:100%;overflow-y:auto;z-index:2;color:white;padding:10px;-webkit-transition:all ease .3s;transition:all ease .3s}
-.template-index>.row-4>.column>.overlay .title h2{text-transform:uppercase;margin:0;font-size:35px;font-family:DIN,serif}
+}@media screen and (min-width:600px){.template-index>.row-4>.column:hover>.overlay{opacity:1}
+}.template-index>.row-4>.column>.overlay{position:absolute;opacity:0;background-color:rgba(20,90,150,0.8);top:0;left:0;width:100%;height:100%;overflow-y:auto;z-index:2;color:white;padding:10px;-webkit-transition:all ease .3s;transition:all ease .3s}
+.template-index>.row-4>.column>.overlay>a{display:none}
+@media screen and (max-width:599px){.template-index>.row-4>.column>.overlay>a{width:100%;height:100%;top:0;left:0;display:block;position:absolute}
+}.template-index>.row-4>.column>.overlay .title h2{text-transform:uppercase;margin:0;font-size:35px;font-family:DIN,serif}
 .template-index>.row-4>.column>.overlay .copy{padding:0 5px;font-size:14px;font-family:Hero,serif}
 .template-index>.row-4>.column>.overlay .more{margin:30px 0 0 0;padding-bottom:10px;text-align:right}
 .template-index>.row-4>.column>.overlay .more a{display:inline-block;padding:10px 20px;color:white;background-color:#05264d;text-decoration:none;text-transform:uppercase;font-family:Elkwood,serif;font-size:25px;line-height:1;letter-spacing:4px}
@@ -964,7 +966,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-index>.row-4>.column>.row-2 .title{font-size:20px}
 }@media screen and (min-width:1200px){.template-index>.row-4>.column>.row-2 .title{font-size:40px}
 }.template-page>.row-1>.wrapper,.template-about>.row-1>.wrapper,.template-sitemap>.row-1>.wrapper,.error-404>.row-1>.wrapper,.template-worship>.row-1>.wrapper,.template-this-week>.row-1>.wrapper,.template-live>.row-1>.wrapper,.template-events>.row-1>.wrapper,.template-blog>.row-1>.wrapper{padding:10px 0;background-color:#05264d}
-.template-page>.row-1>.wrapper ul#sub-menu,.template-about>.row-1>.wrapper ul#sub-menu,.template-sitemap>.row-1>.wrapper ul#sub-menu,.error-404>.row-1>.wrapper ul#sub-menu,.template-worship>.row-1>.wrapper ul#sub-menu,.template-this-week>.row-1>.wrapper ul#sub-menu,.template-live>.row-1>.wrapper ul#sub-menu,.template-events>.row-1>.wrapper ul#sub-menu,.template-blog>.row-1>.wrapper ul#sub-menu{width:95%;margin:0 auto;padding:0;text-align:center;display:none}
+.template-page>.row-1>.wrapper ul#sub-menu,.template-about>.row-1>.wrapper ul#sub-menu,.template-sitemap>.row-1>.wrapper ul#sub-menu,.error-404>.row-1>.wrapper ul#sub-menu,.template-worship>.row-1>.wrapper ul#sub-menu,.template-this-week>.row-1>.wrapper ul#sub-menu,.template-live>.row-1>.wrapper ul#sub-menu,.template-events>.row-1>.wrapper ul#sub-menu,.template-blog>.row-1>.wrapper ul#sub-menu{width:95%;margin:0 auto;padding:0;text-align:center}
 @media screen and (min-width:600px){.template-page>.row-1>.wrapper ul#sub-menu,.template-about>.row-1>.wrapper ul#sub-menu,.template-sitemap>.row-1>.wrapper ul#sub-menu,.error-404>.row-1>.wrapper ul#sub-menu,.template-worship>.row-1>.wrapper ul#sub-menu,.template-this-week>.row-1>.wrapper ul#sub-menu,.template-live>.row-1>.wrapper ul#sub-menu,.template-events>.row-1>.wrapper ul#sub-menu,.template-blog>.row-1>.wrapper ul#sub-menu{width:90%}
 }.template-page>.row-1>.wrapper ul#sub-menu.toggled,.template-about>.row-1>.wrapper ul#sub-menu.toggled,.template-sitemap>.row-1>.wrapper ul#sub-menu.toggled,.error-404>.row-1>.wrapper ul#sub-menu.toggled,.template-worship>.row-1>.wrapper ul#sub-menu.toggled,.template-this-week>.row-1>.wrapper ul#sub-menu.toggled,.template-live>.row-1>.wrapper ul#sub-menu.toggled,.template-events>.row-1>.wrapper ul#sub-menu.toggled,.template-blog>.row-1>.wrapper ul#sub-menu.toggled{display:block}
 @media screen and (min-width:600px){.template-page>.row-1>.wrapper ul#sub-menu,.template-about>.row-1>.wrapper ul#sub-menu,.template-sitemap>.row-1>.wrapper ul#sub-menu,.error-404>.row-1>.wrapper ul#sub-menu,.template-worship>.row-1>.wrapper ul#sub-menu,.template-this-week>.row-1>.wrapper ul#sub-menu,.template-live>.row-1>.wrapper ul#sub-menu,.template-events>.row-1>.wrapper ul#sub-menu,.template-blog>.row-1>.wrapper ul#sub-menu{display:block}
