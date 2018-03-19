@@ -124,3 +124,5 @@ function build_taxonomies() {
 		) );
 
 } // End build taxonomies
+
+add_post_type_support( 'page', 'excerpt' );
