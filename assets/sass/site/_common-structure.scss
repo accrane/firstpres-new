@@ -650,9 +650,9 @@
   text-align: center;
   z-index: 4;
   display: none;
-  height: calc(100vh - 70px);
   overflow-y: auto;
   &.toggled {
+    height: calc(100vh - 70px);
     text-align: left;
     >.wrapper {
       padding: 10px;
@@ -667,6 +667,7 @@
     background-color: white;
     padding: 10px 10px 0 0;
     > i {
+      cursor: pointer;
       height: 40px;
       width: 40px;
       padding: 10px;

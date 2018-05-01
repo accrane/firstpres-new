@@ -57,6 +57,9 @@
             $link = get_field("section_{$i}_link");
             $button_text = get_field("section_{$i}_button_text");?>
             <div class="overlay">
+                <?php if($link):?>
+                    <a href="<?php echo $link;?>"></a>
+                <?php endif;?>
                 <?php if($title):?>
                     <div class="title">
                         <h2><?php echo $title;?><h2>
