@@ -25,10 +25,12 @@
 <?php 
 $alert=get_field('alert_message', 'option');
 $showAlert=get_field('show_alert_message', 'option');
+if($showAlert){$showAlert=$showAlert[0];}
+
 // echo '<pre>';
 // print_r($alert);
 // echo '</pre>';
-if($showAlert[0]=='Yes' && $alert !='' ) : ?>
+if($showAlert=='Yes' && $alert !='' ) : ?>
 	<div class="alert">
 		<?php echo $alert; ?>
 	</div>
