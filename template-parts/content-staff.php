@@ -170,7 +170,9 @@
                     <?php $image = get_field("image");
                     $p_title = get_field("professional_title");
                     $phone = get_field("phone");
-                    $email = get_field("email");?>
+                    $email = get_field("email");
+		    $email = antispambot( $email );
+		?>
                     <div class="row-1">
                         <div class="overlay">
                             <a class="staff-popup" href="#<?php echo sanitize_title_with_dashes( get_the_title() ); ?>">
