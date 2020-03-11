@@ -35,7 +35,7 @@
         </div><!--.row-2-->
     <?php endif;?>
     <div class="row-3 clear-bottom">
-        <div class="column-1">
+        <div class="column-z">
             <div class="title">
                 <header>
                     <h1><?php the_title();?></h1>
