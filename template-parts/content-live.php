@@ -56,7 +56,7 @@
 		<!-- new live stream code -->
 		
 		
-		<div id="boxcast-widget-ruhi5ferzvbo8bqmbi52"></div><script type="text/javascript" charset="utf-8">(function(d, s, c, o) {var js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];var h = (('https:' == document.location.protocol) ? 'https:' : 'http:');js.src = h + '//js.boxcast.com/v3.min.js';js.onload = function() { boxcast.noConflict()('#boxcast-widget-'+c).loadChannel(c, o); };js.charset = 'utf-8';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'ruhi5ferzvbo8bqmbi52', {"showTitle":1,"showDescription":1,"showHighlights":1,"showRelated":true,"defaultVideo":"closest","market":"unknown","showCountdown":true,"poster":"https://uploads.boxcast.com/qun5ifrkatmvyar1hlwr/2020-03/jpbecizqfi1vog1utazt/backplayernew_726285.jpg","showDocuments":false,"showIndex":false,"showDonations":false}));</script>
+		<div id="boxcast-widget-ruhi5ferzvbo8bqmbi52"></div><script type="text/javascript" charset="utf-8">(function(d, s, c, o) {var js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];var h = (('https:' == document.location.protocol) ? 'https:' : 'http:');js.src = h + '//js.boxcast.com/v3.min.js';js.onload = function() { boxcast.noConflict()('#boxcast-widget-'+c).loadChannel(c, o); };js.charset = 'utf-8';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'ruhi5ferzvbo8bqmbi52', {"showTitle":1,"showDescription":1,"showHighlights":1,"showRelated":true,"defaultVideo":"closest","market":"unknown","showCountdown":true,"showDocuments":false,"showIndex":false,"showDonations":false}));</script>
 		
 		
 		
