@@ -215,6 +215,7 @@
 		                            <?php endif;?>
 	                            <?php endforeach;?>
                             </div><!--.row-2-->
+                            <!-- the videos -->
                             <?php if( have_rows('sidebar_videos') ) : while( have_rows('sidebar_videos') ): the_row(); 
                                 $titlev = get_sub_field('title');
                                 $videov = get_sub_field('video');
