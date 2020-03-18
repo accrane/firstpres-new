@@ -643,6 +643,10 @@ section.now-at-top .row-4>.column>.row-1 img{display:block;width:100%}
 section.now-at-top .row-4>.column>.row-2{background-color:#05264d;position:relative}
 section.now-at-top .row-4>.column>.row-2 img{display:block;opacity:0;width:100%}
 section.now-at-top .row-4>.column>.row-2 .title{position:absolute;overflow:hidden;top:50%;left:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);color:white;font-size:40px;text-transform:uppercase;font-family:DIN,serif}
+.embed-container{position:relative;padding-bottom:56.25%;overflow:hidden;max-width:100%;height:auto}
+.embed-container iframe,.embed-container object,.embed-container embed{position:absolute;top:0;left:0;width:100%;height:100%}
+.theembeds{width:100%;float:left;margin-bottom:40px}
+.video-row{width:100%;margin:0 0 30px 0;float:left}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}

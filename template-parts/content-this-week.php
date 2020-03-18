@@ -128,6 +128,19 @@
                  ?>
                  <img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
             <?php endif;?>
+            <?php if( have_rows('sidebar_videos') ) : while( have_rows('sidebar_videos') ): the_row(); 
+                    $titlev = get_sub_field('title');
+                    $videov = get_sub_field('video');
+                ?>
+                <div class="theembeds">
+                    <div class="video-row">
+                        <div class="titlev"><h3><?php echo $titlev; ?></h3></div>
+                        <div class="videov">
+                            <div class="embed-container"><?php echo $videov; ?></div>
+                        </div>
+                    </div>
+                </div>
+            <?php endwhile; endif; ?>
         </div><!--.column-2-->
     </div><!--.row-3-->
     <?php $row_4_copy = get_field("row_4_copy");?>
@@ -248,6 +261,7 @@
                             <img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
                         <?php if($imageLink) {echo '</a>';} $imageLink ='';?>
 					<?php endif;?>
+                    
                 </div><!--.column-2-->
             </div><!--.row-#-->
 		<?php endfor;
