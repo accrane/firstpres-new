@@ -165,6 +165,20 @@
                     <?php endif;?>
                 </div><!--.row-1-->
             <?php endif;?>
+            <!-- the videos -->
+                <?php if( have_rows('sidebar_videos') ) : while( have_rows('sidebar_videos') ): the_row(); 
+                    $titlev = get_sub_field('title');
+                    $videov = get_sub_field('video');
+                ?>
+                <div class="theembeds">
+                    <div class="video-row">
+                        <div class="titlev"><h3><?php echo $titlev; ?></h3></div>
+                        <div class="videov">
+                            <div class="embed-container"><?php echo $videov; ?></div>
+                        </div>
+                    </div>
+                </div>
+            <?php endwhile; endif; ?>
             <?php if($tickets_repeater||$newsletter_repeater):?>
                 <div class="row-2 clear-bottom">
                     <?php if($tickets_repeater&&!empty($tickets_repeater)):?>
@@ -215,20 +229,7 @@
 		                            <?php endif;?>
 	                            <?php endforeach;?>
                             </div><!--.row-2-->
-                            <!-- the videos -->
-                            <?php if( have_rows('sidebar_videos') ) : while( have_rows('sidebar_videos') ): the_row(); 
-                                $titlev = get_sub_field('title');
-                                $videov = get_sub_field('video');
-                            ?>
-                            <div class="theembeds">
-                                <div class="video-row">
-                                    <div class="titlev"><h3><?php echo $titlev; ?></h3></div>
-                                    <div class="videov">
-                                        <div class="embed-container"><?php echo $videov; ?></div>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endwhile; endif; ?>
+
                         </div><!--.column-2-->
                     <?php endif;?>
                 </div><!--.row-2-->
