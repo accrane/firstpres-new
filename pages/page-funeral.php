@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Live
+ * Template Name: Funeral
  */
 
 get_header("interior"); ?>
